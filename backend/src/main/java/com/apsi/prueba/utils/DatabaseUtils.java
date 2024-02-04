@@ -32,7 +32,6 @@ public class DatabaseUtils {
         int endIndex = Math.min(startIndex + size, totalProveedores);
 
         if (startIndex > endIndex || startIndex >= totalProveedores) {
-            // La página solicitada está más allá del rango de proveedores
             return new ArrayList<>();
         }
 

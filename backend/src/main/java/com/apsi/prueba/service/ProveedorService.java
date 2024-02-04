@@ -39,7 +39,6 @@ public class ProveedorService {
             proveedores.add(nuevoProveedor);
             DatabaseUtils.guardarProveedores(proveedores);
         } else {
-            // Lanza una excepción o maneja la duplicación según tus necesidades
             throw new IllegalArgumentException("El proveedor con el nombre especificado ya existe.");
         }
     }
